@@ -1,5 +1,4 @@
 using System;
-
 namespace Turnit.GenericStore.Api.Features.Sales;
 
 public class ProductModel
@@ -9,13 +8,13 @@ public class ProductModel
     public string Name { get; set; }
 
     public AvailabilityModel[] Availability { get; set; }
-    
-    public class AvailabilityModel
-    {
-        public Guid StoreId { get; set; }
-        
-        public int Availability { get; set; }
-    }
+}
+
+public class AvailabilityModel
+{
+    public Guid StoreId { get; set; }
+
+    public int Availability { get; set; }
 }
 
 public class ProductCategoryModel
